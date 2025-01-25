@@ -38,5 +38,7 @@ a Pokedex for them that does the following at minimum:
   - [x] Clear separation of API , UI, types, and state management
   - [ ] Error/ Loading states
     - I would typically handle this with useSWR or similar library, but I haven't integrated this layer with Zustand yet 
+  - [x] Optional Enhancement:
+    - deployed to https://pokemon.wesley.tech/
   - [x] Tests
     - [x] Unit tests for some lib (fetch) functions
