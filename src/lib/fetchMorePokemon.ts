@@ -4,7 +4,10 @@ import {usePokeStore} from "../hooks/usePokeStore.tsx";
 import {findWeaknesses} from "./findWeaknesses.ts";
 
 export const fetchMorePokemon = async () => {
-    const {results: pokemonNames} = await listPokemon({url: usePokeStore.getState().nextUrl}) as ListPokemonResponse
+    const {results: pokemonNames, next, count} = await listPokemon({url: usePokeStore.getState().nextUrl}) as ListPokemonResponse
+
+    usePokeStore.getState().nextUrl = next
+    usePokeStore.getState().totalPokemon = count
 
     if (Array.isArray(pokemonNames)) {
         // let's eagerly fetch all pokemon details!
