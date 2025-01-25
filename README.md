@@ -34,3 +34,9 @@ a Pokedex for them that does the following at minimum:
   - [x] Project bootstrapped with `vite create react-ts`
 - [x] Architecture:
   - [x] Show dirs
+  - [x] Type safety throughout
+  - [x] Clear separation of API , UI, types, and state management
+  - [ ] Error/ Loading states
+    - I would typically handle this with useSWR or similar library, but I haven't integrated this layer with Zustand yet 
+  - [x] Tests
+    - [x] Unit tests for some lib (fetch) functions
