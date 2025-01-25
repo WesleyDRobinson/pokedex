@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "jsx": "react",
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true
+  }
+}
